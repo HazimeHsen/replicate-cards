@@ -3,22 +3,94 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
   </head>
+  <style>
+    body {
+  background: rgb(31, 30, 37);
+    }
+    .container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    flex-direction: row;
+    }
+    .seller-profile-collection__card {
+    background: #181818;
+    border-radius: 30px;
+    overflow: hidden;
+    position: relative;
+    width: 33.33%;
+    min-height: 400px;
+    }
+    @media screen and (max-width: 768px) {
+    .seller-profile-collection__card {
+        width: 100%; /* Take full width on small screens */
+    }
+    .container {
+        flex-direction: column;
+    }
+    .seller-profile-collection__card-profile {
+        margin-left: 0; /* Remove margin on small screens */
+    }
+    }
+
+    .seller-profile-collection__card-bg {
+    object-fit: contain;
+    }
+    .seller-profile-collection__card-bg img {
+    border-radius: 20px;
+    height: 100px;
+    width: 100%;
+    }
+    .seller-profile-collection__card-profile {
+    transform: translateY(-50%);
+    margin-left: 20px;
+    }
+    .seller-profile-collection__card-profile img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: #181818 solid 5px;
+    }
+    .seller-profile-collection__card-info {
+    margin-top: -70px;
+    }
+    .seller-profile-collection__card-title {
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    }
+    .seller-profile-collection__card-title img {
+    width: 25px;
+    height: 25px;
+    }
+    .seller-profile-collection__card-title h2 {
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    margin: 0;
+    }
+    .seller-profile-collection__card-desc {
+    margin: 20px;
+    color: #d9d9d9;
+    font-size: 18px;
+    }
+  </style>
   <body>
     <div class="container">
-      <div class="card">
-        <div class="bg">
+      <div class="seller-profile-collection__card">
+        <div class="seller-profile-collection__card-bg">
           <img src="public/ZjxSPdf65T.jpg" alt="" srcset="" />
         </div>
-        <div class="profile"><img src="/public/GnsxAkalrE.jpg" alt="" /></div>
-        <div class="info">
-          <div class="title">
+        <div class="seller-profile-collection__card-profile"><img src="/public/GnsxAkalrE.jpg" alt="" /></div>
+        <div class="seller-profile-collection__card-info">
+          <div class="seller-profile-collection__card-title">
             <img src="public/star.webp" alt="" srcset="" />
             <h2>Hussein hazime</h2>
           </div>
-          <div class="desc">
+          <div class="seller-profile-collection__card-desc">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
             quaerat modi nihil alias, sapiente quibusdam repudiandae deserunt
             obcaecati sint autem molestias debitis nostrum velit explicabo animi
@@ -26,17 +98,17 @@
           </div>
         </div>
       </div>
-      <div class="card">
-        <div class="bg">
+      <div class="seller-profile-collection__card">
+        <div class="seller-profile-collection__card-bg">
           <img src="public/bg2.jpg" alt="" srcset="" />
         </div>
-        <div class="profile"><img src="/public/p2.jpg" alt="" /></div>
-        <div class="info">
-          <div class="title">
+        <div class="seller-profile-collection__card-profile"><img src="/public/p2.jpg" alt="" /></div>
+        <div class="seller-profile-collection__card-info">
+          <div class="seller-profile-collection__card-title">
             <img src="public/star.webp" alt="" srcset="" />
             <h2>Hussein hazime</h2>
           </div>
-          <div class="desc">
+          <div class="seller-profile-collection__card-desc">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
             quaerat modi nihil alias, sapiente quibusdam repudiandae deserunt
             obcaecati sint autem molestias debitis nostrum velit explicabo animi
@@ -44,17 +116,17 @@
           </div>
         </div>
       </div>
-      <div class="card">
-        <div class="bg">
+      <div class="seller-profile-collection__card">
+        <div class="seller-profile-collection__card-bg">
           <img src="public/bg3.webp" alt="" srcset="" />
         </div>
-        <div class="profile"><img src="/public/p3.avif" alt="" /></div>
-        <div class="info">
-          <div class="title">
+        <div class="seller-profile-collection__card-profile"><img src="/public/p3.avif" alt="" /></div>
+        <div class="seller-profile-collection__card-info">
+          <div class="seller-profile-collection__card-title">
             <img src="public/star.webp" alt="" srcset="" />
             <h2>Hussein hazime</h2>
           </div>
-          <div class="desc">
+          <div class="seller-profile-collection__card-desc">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
             quaerat modi nihil alias, sapiente quibusdam repudiandae deserunt
             obcaecati sint autem molestias debitis nostrum velit explicabo animi
